@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Header from "../src/Components/Common/Header"
+import Footer from "../src/Components/Common/Footer"
 import RouterMain from "../src/Components/Common/Router"
 
 import {Container} from 'react-bootstrap'
@@ -16,9 +17,10 @@ function App() {
     <Router>
       <Header/>
         <div className="content-box">
-            <Container fluid>
+            <Container fluid className="p-0">
                 <RouterMain/>
             </Container>
+            <Footer/>
         </div>
       </Router>
     </>
